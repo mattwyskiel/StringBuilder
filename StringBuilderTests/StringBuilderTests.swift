@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 Matthew Wyskiel. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import XCTest
+import StringBuilder
 
 class StringBuilderTests: XCTestCase {
     
@@ -21,16 +22,19 @@ class StringBuilderTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testInsert() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        let strBuilder = StringBuilder(string: "This  awesome.")
+        .insertItem("is", atIndex: 5)
+        
+        XCTAssert(strBuilder.toString() == "This is awesome.", "The strings are not equal, the string is currently \(strBuilder.toString())")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+    func testAppend() {
+        let strBuilder = StringBuilder(string: "This is ")
+        .append("awesome.")
+        
+        XCTAssert(strBuilder.toString() == "This is awesome.", "The strings are not equal, the string is currently \(strBuilder.toString())")
     }
     
 }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A49771EE19DB854200A6590F /* StringBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = A49771ED19DB854200A6590F /* StringBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A49771F819DB854200A6590F /* StringBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49771F719DB854200A6590F /* StringBuilderTests.swift */; };
+		A497720219DB855600A6590F /* StringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A497720119DB855600A6590F /* StringBuilder.swift */; };
+		A497720319DB893800A6590F /* StringBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49771E819DB854200A6590F /* StringBuilder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,7 @@
 		A49771F319DB854200A6590F /* StringBuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringBuilderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49771F619DB854200A6590F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A49771F719DB854200A6590F /* StringBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringBuilderTests.swift; sourceTree = "<group>"; };
+		A497720119DB855600A6590F /* StringBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A497720319DB893800A6590F /* StringBuilder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +65,7 @@
 			children = (
 				A49771ED19DB854200A6590F /* StringBuilder.h */,
 				A49771EB19DB854200A6590F /* Supporting Files */,
+				A497720119DB855600A6590F /* StringBuilder.swift */,
 			);
 			path = StringBuilder;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A497720219DB855600A6590F /* StringBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +304,7 @@
 		A49771FC19DB854200A6590F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -307,12 +314,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		A49771FD19DB854200A6590F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
