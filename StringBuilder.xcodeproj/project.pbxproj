@@ -346,6 +346,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = StringBuilderTests/Info.plist;
+				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -359,6 +360,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = StringBuilderTests/Info.plist;
+				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -383,6 +385,7 @@
 				A49771FD19DB854200A6590F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A49771FE19DB854200A6590F /* Build configuration list for PBXNativeTarget "StringBuilderTests" */ = {
 			isa = XCConfigurationList;
@@ -391,6 +394,7 @@
 				A497720019DB854200A6590F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
