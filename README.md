@@ -3,6 +3,11 @@ StringBuilder
 
 A simple reimagining of Java's StringBuilder class for Swift
 
+# Installation
+```ruby
+pod 'StringBuilder'
+```
+
 # License
 Copyright 2014 Matthew Wyskiel
 
