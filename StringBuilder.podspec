@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "StringBuilder"
-  s.version      = "0.0.1"
+  s.version      = "0.0.1.1"
   s.summary      = "A simple reimagining of Java's StringBuilder class for Swift"
   s.description  = <<-DESC
                    A simple reimagining of Java's StringBuilder class for Swift. This was written in conjunction with [LicensesKit](https://github.com/mattwyskiel/LicensesKit)
