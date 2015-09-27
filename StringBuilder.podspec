@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "http://twitter.com/MattWyskiel"
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.9"
+  s.watchos.deployment_target = "2.0"
   s.source       = { :git => "https://github.com/mattwyskiel/StringBuilder.git", :tag => "#{s.version}" }
   s.source_files  = "StringBuilder/StringBuilder.swift"
   s.framework  = "Foundation"
