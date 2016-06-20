@@ -25,7 +25,7 @@ class StringBuilderTests: XCTestCase {
     func testInsert() {
         // This is an example of a functional test case.
         let strBuilder = StringBuilder(string: "This  awesome.")
-        .insertItem("is", atIndex: 5)
+        .insert("is", at: 5)
         
         XCTAssert(strBuilder.toString() == "This is awesome.", "The strings are not equal, the string is currently \(strBuilder.toString())")
     }

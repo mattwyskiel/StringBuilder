@@ -20,14 +20,14 @@ public class StringBuilder {
         self.string = string
     }
     
-    public func append<T>(itemToAppend: T) -> Self {
+    public func append<T>(_ itemToAppend: T) -> Self {
         self.string += "\(itemToAppend)"
         return self
     }
     
-    public func insertItem<T>(item: T, atIndex index: Int) -> Self {
+    public func insert<T>(_ item: T, at index: Int) -> Self {
         let mutableString = NSMutableString(string: self.string)
-        mutableString.insertString("\(item)", atIndex: index)
+        mutableString.insert("\(item)", at: index)
         self.string = mutableString as String
         return self
     }
