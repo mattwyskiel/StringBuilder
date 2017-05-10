@@ -8,9 +8,9 @@
 
 import Foundation
 
-public class StringBuilder {
+open class StringBuilder {
     
-    private(set) var string: String
+    fileprivate(set) var string: String
     
     public init() {
         string = ""
@@ -20,19 +20,19 @@ public class StringBuilder {
         self.string = string
     }
     
-    public func append<T>(itemToAppend: T) -> Self {
+    open func append<T>(_ itemToAppend: T) -> Self {
         self.string += "\(itemToAppend)"
         return self
     }
     
-    public func insertItem<T>(item: T, atIndex index: Int) -> Self {
+    open func insertItem<T>(_ item: T, atIndex index: Int) -> Self {
         let mutableString = NSMutableString(string: self.string)
-        mutableString.insertString("\(item)", atIndex: index)
+        mutableString.insert("\(item)", at: index)
         self.string = mutableString as String
         return self
     }
     
-    public func toString() -> String {
+    open func toString() -> String {
         return string;
     }
    
